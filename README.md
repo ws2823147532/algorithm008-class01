@@ -1,5 +1,7 @@
 # 极客大学「算法训练营-第8期」作业提交仓库
 
+> Issue地址：https://github.com/algorithm008-class01/algorithm008-class01/issues
+
 
 ## 讲师课件下载地址
 
