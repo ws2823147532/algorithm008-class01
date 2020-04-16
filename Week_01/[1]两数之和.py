@@ -18,6 +18,7 @@ class Solution:
         if not nums or len(nums) <= 1:
             return None
         res = {target - nums[0]: 0}
+        # O(n)
         for i in range(1, len(nums)):
             if nums[i] in res:
                 return [res[nums[i]], i]
