@@ -20,7 +20,7 @@ class ListNode:
 
 # 链表的操作十分不熟练
 class Solution:
-    # 遍历
+    # 遍历: 遍历的时候，只能处理当前节点的前驱节点，如果要改变当前节点的后驱，那么一定要保存之前的后驱节点
     def reverseList1(self, head: ListNode) -> ListNode:
         prev = None
         curr = head
