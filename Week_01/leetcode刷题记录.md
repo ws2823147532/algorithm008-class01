@@ -39,7 +39,7 @@
 预习题目
 
 - [x] [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
-- [ ] [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
+- [x] [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
 
 实战题目
 
