@@ -120,6 +120,8 @@ class BinaryTree(AbstractTree):
 
         def _inorder3(node):
             """
+            根据leetcode的题解整理出来
+            https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/yan-se-biao-ji-fa-yi-chong-tong-yong-qie-jian-ming/
             使用stack的另一种实现方式，简单统一
             首先初始化栈，将根节点加入栈
             依次出栈得到node，直到stack变成空的
