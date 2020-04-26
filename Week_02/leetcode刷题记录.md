@@ -16,14 +16,22 @@
   - [x] [412. Fizz Buzz](https://leetcode-cn.com/problems/fizz-buzz/)
   - [x] [258. 各位相加](https://leetcode-cn.com/problems/add-digits/)
   - [ ] [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
-
 - [ ] 第二周 周五 2020-04-24
-  - [ ] [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
-  - [ ] [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
-  - [ ] [559. N叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)
+  - [x] [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+  - [x] [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+  - [x] [559. N叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)
   - [ ] [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 - [ ] 第二周 周六 2020-04-25
+  - [x] [面试题 01.08. 零矩阵](https://leetcode-cn.com/problems/zero-matrix-lcci/)
+  - [x] [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/) 高频考题
+  - [ ] [1200. 最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference/)
 - [ ] 第二周 周日 2020-04-26
+
+
+
+
+
+
 
 
 
