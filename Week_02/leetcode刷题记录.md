@@ -26,8 +26,8 @@
   - [x] [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/) 高频考题
   - [ ] [1200. 最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference/)
 - [ ] 第二周 周日 2020-04-26
-
-
+  - [x] [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+  - [ ] [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 
 
 
