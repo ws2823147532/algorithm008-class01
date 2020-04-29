@@ -37,8 +37,8 @@
 
 > 哈希表、映射、集合
 
-- [ ] [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
-- [ ] [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)
+- [x] [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+- [x] [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)
 - [ ] [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
 
 
@@ -60,5 +60,5 @@
 - [ ] [面试题40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) 简单
 - [ ] [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) 困难
 - [ ] [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/) 中等
-- [ ] [面试题49. 丑数](https://leetcode-cn.com/problems/chou-shu-lcof/) 中等
+- [x] [面试题49. 丑数](https://leetcode-cn.com/problems/chou-shu-lcof/) 中等
 

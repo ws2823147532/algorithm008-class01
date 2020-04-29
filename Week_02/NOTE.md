@@ -6,6 +6,19 @@
 
 ##### HashMap&HashSet
 
+| 方法或字段                                                   | 注释                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| <span style="color:red">DEFAULT_INITIAL_CAPACITY</span>      | The default initial capacity - MUST be a power of two. |
+| <span style="color:red">MAXIMUM_CAPACITY</span>              |                                                        |
+| <span style="color:red">DEFAULT_LOAD_FACTOR</span>           |                                                        |
+| <span style="color:red">TREEIFY_THRESHOLD</span>             |                                                        |
+| <span style="color:red">UNTREEIFY_THRESHOLD</span>           |                                                        |
+| <span style="color:red">MIN_TREEIFY_CAPACITY</span>          |                                                        |
+| <span style="color:green">Node<K,V> implements Map.Entry<K,V></span> | Basic hash bin node                                    |
+| <span style="color:green">TreeNode<K,V> extends LinkedHashMap.Entry<K,V></span> | red-black Tree bins                                    |
+| <span style="color:blue">V put(K key, V value)</span>        |                                                        |
+| <span style="color:blue">V get(Object key)</span>            |                                                        |
+
 
 
 ##### 树
@@ -63,6 +76,8 @@ class TreeNode:
 
 ###### 二叉搜索树
 
+>  左子树小于根节点，右子树都要大于根节点，且左右子树具有相同的特征
+
 
 
 
@@ -73,3 +88,4 @@ class TreeNode:
 
 
 
+![](./resources/堆的时间复杂度.png)

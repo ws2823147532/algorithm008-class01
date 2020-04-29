@@ -21,7 +21,20 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
+    # 字母异位词，排序之后应该一样
+    # 复杂度分析：
+    #     时间复杂度：O(n log n)
+    #     空间复杂度：
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t): return False
+        return sorted([c for c in s]) == sorted([c for c in t])
+
+    # 使用map记录每个字符的出现的次数，遍历s的时候+1，遍历t的时候-1
+    # 如果出现一个不为0的字符，那说明不是异位词
+    # 复杂度分析：
+    #     时间复杂度：O(n)
+    #     空间复杂度：O(1)，字符数有限，故是常数的
+    def isAnagram1(self, s: str, t: str) -> bool:
         if len(s) != len(t): return False
 
         c_map = {}
