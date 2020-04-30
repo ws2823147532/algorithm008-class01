@@ -1,7 +1,7 @@
 本周预习
 
 - [x] [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
-- [ ] [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
+- [x] [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
 - [ ] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 - [ ] [78. 子集](https://leetcode-cn.com/problems/subsets/)
 - [ ] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
@@ -18,8 +18,8 @@
   - [ ] [1276. 不浪费原料的汉堡制作方案](https://leetcode-cn.com/problems/number-of-burgers-with-no-waste-of-ingredients/)
   - [ ] [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
 - [ ] 第三周 周三 2020-04-29
-  - [ ] [面试题05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
-  - [ ] [面试题06. 从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+  - [x] [面试题05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
+  - [x] [面试题06. 从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
   - [ ] [面试题68 - II. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 - [ ] 第三周 周四 2020-04-30
 - [ ] 第三周 周五 2020-05-01
