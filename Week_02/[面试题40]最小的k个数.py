@@ -1,3 +1,33 @@
+# 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+#
+#
+#
+#  示例 1：
+#
+#  输入：arr = [3,2,1], k = 2
+# 输出：[1,2] 或者 [2,1]
+#
+#
+#  示例 2：
+#
+#  输入：arr = [0,1,2,1], k = 1
+# 输出：[0]
+#
+#
+#
+#  限制：
+#
+#
+#  0 <= k <= arr.length <= 10000
+#  0 <= arr[i] <= 10000
+#
+#  Related Topics 堆 分治算法
+
+
+# leetcode submit region begin(Prohibit modification and deletion)
+from typing import List
+
+
 class BinaryHeap:
     def __init__(self, heap_type='min'):
         self.data = []
@@ -137,6 +167,49 @@ class BinaryHeap:
         self.data[i] = tmp
 
 
-min_heap = BinaryHeap(heap_type='max')
-min_heap.from_list([3, 2, 1])
-print(min_heap)
+class Solution:
+
+    def getLeastNumbers1(self, arr: List[int], k: int) -> List[int]:
+        """
+        自定义的binary heap耗时360ma
+        :param arr:
+        :param k:
+        :return:
+        """
+        if not arr or k <= 0: return []
+        max_heap = BinaryHeap(heap_type='max')
+        max_heap.from_list(arr[:k])
+
+        for num in arr[k:]:
+            max_top = max_heap.peek()
+            if num < max_top:
+                max_heap.pop()
+                max_heap.push(num)
+
+        return max_heap.data
+
+    def getLeastNumbers(self, arr: List[int], k: int) -> List[int]:
+        """
+        调用库函数，耗时64ms
+        :param arr:
+        :param k:
+        :return:
+        """
+        if k == 0:
+            return list()
+
+        hp = [-x for x in arr[:k]]
+        import heapq
+        heapq.heapify(hp)
+        for i in range(k, len(arr)):
+            if -hp[0] > arr[i]:
+                heapq.heappop(hp)
+                heapq.heappush(hp, -arr[i])
+        ans = [-x for x in hp]
+        return ans
+
+
+# leetcode submit region end(Prohibit modification and deletion)
+
+res = Solution().getLeastNumbers([0, 0, 0, 2, 0, 5], 0)
+print(res)

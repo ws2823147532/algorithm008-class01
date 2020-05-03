@@ -56,7 +56,7 @@
 
 
 
-> 堆和二叉堆、图
+> 堆和二叉堆
 
 - [ ] [面试题40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) 简单
 - [ ] [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) 困难
