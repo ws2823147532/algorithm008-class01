@@ -72,7 +72,7 @@ def divide_conquer(problem, param1, param2, ...):
 | [51. N皇后](https://leetcode-cn.com/problems/n-queens/)      | 其实就是全排列问题，注意设计清楚状态变量。                   |          |
 | [60. 第k个排列](https://leetcode-cn.com/problems/permutation-sequence/) | 利用了剪枝的思想，减去了大量枝叶，直接来到需要的叶子结点。   |          |
 | [77. 组合](https://leetcode-cn.com/problems/combinations/)   | 组合问题按顺序找，就不会重复。并且举一个中等规模的例子，找到如何剪枝，这道题思想不难，难在编码。 |          |
-| [78. 子集](https://leetcode-cn.com/problems/subsets/)        | 为数不多的，解不在叶子结点上的回溯搜索问题。解法比较多，注意对比。 |          |
+| [78. 子集](https://leetcode-cn.com/problems/subsets/)        | 为数不多的，解不在叶子结点上的回溯搜索问题。解法比较多，注意对比。 | ✅        |
 | [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)  | 剪枝技巧同 47 题、39 题、40 题。                             |          |
 | [93. 复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/) |                                                              |          |
 | [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/) |                                                              |          |

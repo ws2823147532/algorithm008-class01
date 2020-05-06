@@ -2,8 +2,8 @@
 
 - [x] [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) :three:
 - [x] [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) :one:
-- [ ] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
-- [ ] [78. 子集](https://leetcode-cn.com/problems/subsets/)
+- [x] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/) :one:
+- [x] [78. 子集](https://leetcode-cn.com/problems/subsets/) :one:
 - [ ] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
 
 
@@ -27,7 +27,9 @@
 - [ ] 第三周 周五 2020-05-01
   - [x] [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) :one:
 - [ ] 第三周 周六 2020-05-02
+  - [x] [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) :four:
 - [ ] 第三周 周日 2020-05-03
+  - [x] [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) :two:
 
 
 
@@ -44,8 +46,8 @@
 
 
 - [ ] 分治
-  - [ ] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
-  - [ ] [78. 子集](https://leetcode-cn.com/problems/subsets/)
+  - [x] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)  :one:
+  - [x] [78. 子集](https://leetcode-cn.com/problems/subsets/) :one:
   - [ ] [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
 - [ ] 回溯
   - [ ] [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
