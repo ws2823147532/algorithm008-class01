@@ -236,7 +236,7 @@ https://github.com/kevinnerd/algorithm008-class01
   - [x] [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)
 
 - [ ] 第四周 周四 2020-05-07
-  - [ ] [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
+  - [x] [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
 - [ ] 第四周 周无 2020-05-08
 - [ ] 第四周 周六 2020-05-09
 - [ ] 第四周 周日 2020-05-10
