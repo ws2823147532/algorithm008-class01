@@ -24,8 +24,11 @@
 class Solution {
     public boolean canJump(int[] nums) {
         int max_pos = 0; // 最大能到达的位置
+
+        // 遍历状态集
         for (int i = 0; i < nums.length; i++) {
             if (i > max_pos) return false;
+            // 对每一个状态都做局部最优解
             max_pos = Math.max(max_pos, i + nums[i]);
             if (max_pos > nums.length) return true;
         }
