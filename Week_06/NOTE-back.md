@@ -50,8 +50,15 @@ DP三步曲
    假设使用a[i]表示第i个斐波那契数，那么f[i] = f[i-1]+f[i-2] 且f[0]=0,f[1]=1
 
 3. DP方程
-
-   ![image-20200601062524927](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdwsp4vqj309l02ra9x.jpg)
+   $$
+   f(n)=\left\{
+   \begin{aligned}
+   0 &,& n=0 \\
+   1 &,& n=1 \\
+   f(n-1)+f(n-2) &,& n>1
+   \end{aligned}
+   \right.
+   $$
 
 
 ###### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
@@ -64,15 +71,28 @@ DP三步曲
 - 可以上1 2 3阶，且相邻的两个步伐不能相同，该如何设计
 
 本体：
-
-![image-20200601062551796](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdx8z6b8j309902tjr8.jpg)
-
+$$
+f(n)=\left\{
+\begin{aligned}
+1 &,& n=1 \\
+2 &,& n=2 \\
+f(n-1)+f(n-2) &,& n>2
+\end{aligned}
+\right.
+$$
 
 
 变体1：
-
-![image-20200601062616461](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdxoj65ij30c203l0sm.jpg)
-
+$$
+f(n)=\left\{
+\begin{aligned}
+1 &,& n=1 \\
+2 &,& n=2 \\
+4 &,& n=3 \\
+f(n-1)+f(n-2)+f(n-3) &,& n>3
+\end{aligned}
+\right.
+$$
 变体2：
 
 定义dp\[0...2][i]，
@@ -147,9 +167,15 @@ DP问题三步曲
 
 3. DP方程
 
-![image-20200601062647610](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdy86gt3j309o030dfp.jpg)
-
-
+$$
+f(n) = \left\{
+\begin{aligned}
+0 &,& n=0 \\
+1 &,& n=1 \\
+min(f(n-k))+1 &,& k \in coins \\
+\end{aligned}
+\right.
+$$
 
 ```python
 class Solution:
@@ -190,9 +216,15 @@ class Solution:
 
 3. DP方程
 
-![image-20200601062021967](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdrldjaoj30fq02lq2x.jpg)
-
-
+$$
+f(x,y) = \left\{
+\begin{aligned}
+1 &,& x=m\\
+1 &,& y=n\\
+f(x+1, y)+f(x, y+1) &,& 0 \leq x < m \& 0 \leq y < n
+\end{aligned}
+\right.
+$$
 
 ```python
 class Solution:
@@ -246,7 +278,20 @@ class Solution:
 
 3. DP方程
 
-![image-20200601062317188](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcduklvsuj30kt04qmxx.jpg)
+$$
+f(x,y) = \left\{
+\begin{aligned}
+0 &,& x=m\&x\leq lastcol(lastrow表示下边界最后一个障碍物的位置)\\
+0 &,& y=n\&y\leq lastrow(lastrow表示右边界最后一个障碍物的位置)\\
+1 &,& x=m\&x>lastcol(lastrow表示下边界最后一个障碍物的位置)\\
+1 &,& y=n\&y>lastrow(lastrow表示右边界最后一个障碍物的位置)\\
+0 &,& obstacleGrid(x, y)=1\\
+f(x-1, y)+f(x, y-1) &,& 0 \leq x < m \& 0 \leq y < n
+\end{aligned}
+\right.
+$$
+
+
 
 ```python
 class Solution:
@@ -338,7 +383,15 @@ class Solution:
 
 3. DP方程
 
-![image-20200601062105887](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdsala0lj30ez02ijrh.jpg)
+$$
+f(x, y) = \left\{
+\begin{aligned}
+0 &,& x=0\&y=0 \\
+max(f(x-1, y), f(x, y-1)) &,& text1(x)!=text2(y) \\
+f(x-1, y-1)+1 &,& text1(x)=text2(y) \\
+\end{aligned}
+\right.
+$$
 
 
 
@@ -402,9 +455,14 @@ class Solution:
 
 3. DP方程
 
-![image-20200601062136554](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdstvkc1j30gx02a3yk.jpg)
-
-
+$$
+f(x, y) = \left\{
+\begin{aligned}
+matrix(0, 0) &, & x=0\&y=0 \\
+min(f(x-1, y), f(x-1. y-1)) + matrix(x,y) &,& 0\leq x \& 0\leq y
+\end{aligned}
+\right.
+$$
 
 ```python
 class Solution:
@@ -479,7 +537,7 @@ DP三步曲
 3. DP方程
 
 $$
-<Empty \space Math \space Block>
+
 $$
 
 
@@ -523,7 +581,27 @@ DP问题三步曲
 
 3. DP方程定义
 
-   ![image-20200601062159489](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdt8ccqcj30bp04dmxc.jpg)
+$$
+f(n,0) =\left\{
+\begin{aligned}
+0 &,& n=0 \\
+max(f(n-1, 0), f(n-1, 1)) &,& n>1
+\end{aligned}
+\right.
+$$
+
+$$
+f(n,1) =\left\{
+\begin{aligned}
+0 &,& n=0 \\
+f(n-1, 0)+nums(n) &,& n>1
+\end{aligned}
+\right.
+$$
+
+$$
+res = max(f(n, 0), f(n, 1))
+$$
 
 ```python
 class Solution:
@@ -567,9 +645,15 @@ DP问题三步曲-version2
 
 3. DP方程
 
-![image-20200601062225448](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdto73r8j30do031aa1.jpg)
-
-
+$$
+f(n) = \left\{
+\begin{aligned}
+0 &,& n=-1 \\
+0 &,& n=0 \\
+max(f(n-1), f(n-2)+nums(n)) &,& n>0
+\end{aligned}
+\right.
+$$
 
 ```python
 class Solution:
