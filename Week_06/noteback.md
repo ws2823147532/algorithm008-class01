@@ -51,7 +51,7 @@ DP三步曲
 
 3. DP方程
 
-   <a href="https://www.codecogs.com/eqnedit.php?latex=f(n)&space;=&space;\left\{&space;\begin{aligned}&space;0&space;&,&&space;n=0&space;\\&space;1&space;&,&&space;n=1&space;\\&space;min(f(n-k))&plus;1&space;&,&&space;k&space;\in&space;coins&space;\\&space;\end{aligned}&space;\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)&space;=&space;\left\{&space;\begin{aligned}&space;0&space;&,&&space;n=0&space;\\&space;1&space;&,&&space;n=1&space;\\&space;min(f(n-k))&plus;1&space;&,&&space;k&space;\in&space;coins&space;\\&space;\end{aligned}&space;\right." title="f(n) = \left\{ \begin{aligned} 0 &,& n=0 \\ 1 &,& n=1 \\ min(f(n-k))+1 &,& k \in coins \\ \end{aligned} \right." /></a>
+   ![image-20200601062524927](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdwsp4vqj309l02ra9x.jpg)
 
 
 ###### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
@@ -65,13 +65,13 @@ DP三步曲
 
 本体：
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=f(n)=\left\{&space;\begin{aligned}&space;1&space;&,&&space;n=1&space;\\&space;2&space;&,&&space;n=2&space;\\&space;f(n-1)&plus;f(n-2)&space;&,&&space;n>2&space;\end{aligned}&space;\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)=\left\{&space;\begin{aligned}&space;1&space;&,&&space;n=1&space;\\&space;2&space;&,&&space;n=2&space;\\&space;f(n-1)&plus;f(n-2)&space;&,&&space;n>2&space;\end{aligned}&space;\right." title="f(n)=\left\{ \begin{aligned} 1 &,& n=1 \\ 2 &,& n=2 \\ f(n-1)+f(n-2) &,& n>2 \end{aligned} \right." /></a>
+![image-20200601062551796](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdx8z6b8j309902tjr8.jpg)
 
 
 
 变体1：
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=f(n)=\left\{&space;\begin{aligned}&space;1&space;&,&&space;n=1&space;\\&space;2&space;&,&&space;n=2&space;\\&space;4&space;&,&&space;n=3&space;\\&space;f(n-1)&plus;f(n-2)&plus;f(n-3)&space;&,&&space;n>3&space;\end{aligned}&space;\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)=\left\{&space;\begin{aligned}&space;1&space;&,&&space;n=1&space;\\&space;2&space;&,&&space;n=2&space;\\&space;4&space;&,&&space;n=3&space;\\&space;f(n-1)&plus;f(n-2)&plus;f(n-3)&space;&,&&space;n>3&space;\end{aligned}&space;\right." title="f(n)=\left\{ \begin{aligned} 1 &,& n=1 \\ 2 &,& n=2 \\ 4 &,& n=3 \\ f(n-1)+f(n-2)+f(n-3) &,& n>3 \end{aligned} \right." /></a>
+![image-20200601062616461](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdxoj65ij30c203l0sm.jpg)
 
 变体2：
 
@@ -147,7 +147,7 @@ DP问题三步曲
 
 3. DP方程
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=f(n)&space;=&space;\left\{&space;\begin{aligned}&space;0&space;&,&&space;n=0&space;\\&space;1&space;&,&&space;n=1&space;\\&space;min(f(n-k))&plus;1&space;&,&&space;k&space;\in&space;coins&space;\\&space;\end{aligned}&space;\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)&space;=&space;\left\{&space;\begin{aligned}&space;0&space;&,&&space;n=0&space;\\&space;1&space;&,&&space;n=1&space;\\&space;min(f(n-k))&plus;1&space;&,&&space;k&space;\in&space;coins&space;\\&space;\end{aligned}&space;\right." title="f(n) = \left\{ \begin{aligned} 0 &,& n=0 \\ 1 &,& n=1 \\ min(f(n-k))+1 &,& k \in coins \\ \end{aligned} \right." /></a>
+![image-20200601062647610](https://tva1.sinaimg.cn/large/007S8ZIlly1gfcdy86gt3j309o030dfp.jpg)
 
 
 
