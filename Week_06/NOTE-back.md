@@ -61,6 +61,7 @@ DP三步曲
    $$
 
 
+
 ###### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
 ![image-20200530102415327](https://tva1.sinaimg.cn/large/007S8ZIlly1gfa9koughqj30ij0ebjsi.jpg)
@@ -504,9 +505,44 @@ DP三步曲
 
 1. 找到重复子问题
 
+   以某个位置(i,j)为右下角的正方形的边长，可以根据当前位置的up、left、left_up三个位置确定出来
+
 2. 状态定义
 
+   dp\[i][j]表示以(i,j)为右下角的正方形的边长，那么如果(i,j)为0，dp\[i][j]=0；否则dp\[i][j]=min(up,left,up_left)+1
+
+   加1的目的是，至少包含它本身
+
 3. DP方程
+
+$$
+f(x,y) = \left\{
+\begin{aligned}
+0 &,& board(x,y)=0 \\
+min(f(x-1, y), f(x-1, y-1), f(x, y-1)) &,& board(x,y)=1 \\
+\end{aligned}    
+\right.
+$$
+
+```python
+class Solution:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
+        if not matrix or not matrix[0]: return 0
+        m, n = len(matrix[0]), len(matrix)
+        dp = [[0 for _ in range(m)] for _ in range(n)]
+        max_edge = dp[0][0] = int(matrix[0][0])
+        for i in range(0, n):
+            for j in range(0, m):
+                if i == 0 or j == 0:
+                    dp[i][j] = 0 if matrix[i][j] == '0' else 1
+                else:
+                    dp[i][j] = 0 if matrix[i][j] == '0' else min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+                max_edge = max(dp[i][j], max_edge)
+
+        return max_edge * max_edge
+```
+
+
 
 
 
