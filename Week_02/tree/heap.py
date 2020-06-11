@@ -1,4 +1,9 @@
 class BinaryHeap:
+    """
+    大顶堆：根节点是最大值,根结点要比所有子树都大
+    小顶堆：根节点是最小值,根结点要比左右子树都小
+    """
+
     def __init__(self, heap_type='min'):
         self.data = []
 
@@ -17,6 +22,7 @@ class BinaryHeap:
     def push(self, val):
         """
         向堆中插入一个元素
+        将元素追加到最后，然后向上调整
         :param val:
         :return:
         """
@@ -81,15 +87,24 @@ class BinaryHeap:
 
     @staticmethod
     def _father(i):
-        return (i - 1) // 2
+        # return (i - 1) // 2
+        return (i - 1) >> 1
 
     @staticmethod
     def _kth_child(i, k):
+        """
+        获取第i个元素的第k个孩子的索引
+        :return:
+        """
         return 2 * i + k
 
     def _heapify_up(self, i):
         """
         从i开始 自下而上的调整整个堆
+        记录待调整元素
+        待调整元素与父结点比较
+            小顶堆：
+                如果小于父结点元素，则将父结点向下调整，继续向上
         :return:
         """
         # while True:
@@ -105,7 +120,7 @@ class BinaryHeap:
         insert_val = self.data[i]
         while i > 0 and self.comparator(insert_val, self.data[self._father(i)]):
             self.data[i] = self.data[self._father(i)]
-            i = self._father(i)
+            i = self._father(i)  # 持续向上调整
         self.data[i] = insert_val
 
     def _valid_child(self, i):
@@ -122,17 +137,18 @@ class BinaryHeap:
     def _heapify_down(self, i):
         """
         从i开始 自上而下的调整整个堆
+        选择最大(小)的孩子节点进行交换，直到比所有的孩子节点都大(小)
         :return:
         """
         tmp = self.data[i]
 
         while self._kth_child(i, 1) < len(self.data):
-            child = self._valid_child(i)
+            child = self._valid_child(i)  # 选择最大孩子节点
             if self.comparator(self.data[child], tmp):
                 self.data[i] = self.data[child]
             else:
                 break
-            i = child
+            i = child  # 持续向下调整
 
         self.data[i] = tmp
 
