@@ -30,6 +30,7 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def workPattern(self, pattern, str):
+        dict()
         res = str.split()
         return list(map(pattern.index, pattern)) == list(map(res.index, res))
 

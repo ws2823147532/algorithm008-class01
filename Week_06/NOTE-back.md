@@ -62,6 +62,8 @@ DP三步曲
 
 
 
+
+
 ###### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
 ![image-20200530102415327](https://tva1.sinaimg.cn/large/007S8ZIlly1gfa9koughqj30ij0ebjsi.jpg)
@@ -433,6 +435,39 @@ class Solution:
 
         return curr
 ```
+
+###### [115. 不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)
+
+![image-20200623091005128](https://tva1.sinaimg.cn/large/007S8ZIlly1gg1yavf32aj30qk0f875p.jpg)
+
+`dp[i][j]` 代表 `T` 前 `i` 字符串可以由 `S` `j` 字符串组成最多个数.
+
+所以动态方程:
+
+当 S[j] == T[i] , dp\[i][j] = dp\[i-1][j-1] + dp\[i][j-1];
+
+当 S[j] != T[i] , dp\[i][j] = dp\[i][j-1]
+
+
+
+| T(i)\S(j) | ''   | b    | a    | b    | g    | b    | a    | g    |
+| --------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| ''        | 1    | 1    | 1    | 1    | 1    | 1    | 1    | 1    |
+| b         | 0    | 1    | 1    | 2    | 2    | 3    | 3    | 3    |
+| a         | 0    | 0    | 1    | 1    | 1    | 1    | 4    | 4    |
+| g         | 0    | 0    | 0    | 0    | 1    | 1    | 1    | 5    |
+
+
+$$
+f(x, y) = \left\{
+\begin{aligned}
+0 &,& x=0\&y=0 \\
+f(x-1, y) &,& text1(x)!=text2(y) \\
+f(x-1, y)+f(x-1, y-1) &,& text1(x)=text2(y) \\
+\end{aligned}
+\right.
+$$
+
 
 
 

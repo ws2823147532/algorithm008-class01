@@ -62,6 +62,9 @@ DP三步曲
 
 
 
+
+
+
 ###### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
 ![image-20200530102415327](https://tva1.sinaimg.cn/large/007S8ZIlly1gfa9koughqj30ij0ebjsi.jpg)
@@ -364,8 +367,8 @@ class Solution:
 
    abcde和abc的问题可以由下列的二维表格描述，如果要求某个位置的值，只需要知道它之前的某些位置即可
 
-   |      | a           | b            | c             | d              | e                |
-   | ---- | ----------- | ------------ | ------------- | -------------- | ---------------- |
+   | - | a           | b            | c             | d              | e                |
+   | :----: | :-----------: | :------------: | :-------------: | :--------------: | :----------------: |
    | a    | LCS(a,a)=1  | LCS(a,ab)=1  | LCS(a,abc)=1  | LCS(a,aabcd)=1 | LCS(a,abcde)=1   |
    | c    | LCS(ac,a)=1 | LCS(ac,ab)=1 | LCS(ac,abc)=2 | 2              | 2                |
    | e    | 1           | 1            | 2             | 2              | LCS(ace,abcde)=3 |
